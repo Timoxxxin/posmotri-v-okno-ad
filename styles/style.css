@@ -47,6 +47,8 @@ ol {
   grid-template-areas:'result content__details' ;
 }
 
+/* Правый блок */
+
 .content__details {
   grid-area: content__details;
   display: flex;
@@ -112,6 +114,11 @@ ol {
   display: block;
 }
 
+.result__video-container,
+.content__list {
+  position: relative;
+}
+
 .content__list-item {
   margin-block-end: 30px;
 }
@@ -121,6 +128,8 @@ ol {
   color: #fff;
   text-decoration: none;
 }
+
+/* Левый блок */
 
 .result__video-container{
   inline-size: 711px;
