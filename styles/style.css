@@ -16,6 +16,8 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: grid;
+  place-items: center center;
 }
 
 h1,
@@ -35,6 +37,35 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+.content{
+  display: grid;
+  align-items: end;
+  gap: 30px;
+  grid-template-columns: 711px 399px;
+  grid-template-areas:'result content__details' ;
+}
+
+.content__details {
+  grid-area: content__details;
+  display: flex;
+  flex-direction: column;
+  block-size: 100%;
+  gap: 26px;
+}
+
+.content__list{
+  max-inline-size: 399px;
+  block-size: 298px;
+  overflow-y: auto;
+}
+
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 /* Кастомный скроллбар */
