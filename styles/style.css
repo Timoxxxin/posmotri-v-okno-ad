@@ -61,14 +61,20 @@ ol {
   overflow-y: auto;
 }
 
-.content__list-item{
+.content__list-item {
   margin-block-end: 30px;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 .content__card-link {
   display: block;
   color: #fff;
   text-decoration: none;
+}
+
+.content__card-link_current {
+  background: #545050;
 }
 
 .content__video-card{
@@ -104,6 +110,16 @@ ol {
   object-fit: cover;
   object-position: center;
   display: block;
+}
+
+.content__list-item {
+  margin-block-end: 30px;
+}
+
+.content__card-link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
 }
 
 .result__video-container{
@@ -242,6 +258,11 @@ ol {
   background: #fff;
   height: 15px;
   width: 15px;
+}
+
+.button:focus,
+.content__card-link:focus {
+  outline: none;
 }
 
 
